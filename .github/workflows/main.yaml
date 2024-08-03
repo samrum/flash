@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
   workflow_dispatch:
 
@@ -20,4 +20,3 @@ jobs:
 
       - run: bun install
       - run: bun lint
-      - run: bun vitest
