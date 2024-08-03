@@ -2,14 +2,14 @@ export default function DeviceState({ connected, serial }) {
   return (
     connected && (
       <div
-        class="absolute bottom-0 m-0 lg:m-4 p-4 w-full sm:w-auto sm:min-w-350px sm:border sm:border-gray-200 dark:sm:border-gray-600 bg-white dark:bg-gray-700 text-black dark:text-white rounded-md flex flex-row gap-2"
+        className="absolute bottom-0 m-0 lg:m-4 p-4 w-full sm:w-auto sm:min-w-350px sm:border sm:border-gray-200 dark:sm:border-gray-600 bg-white dark:bg-gray-700 text-black dark:text-white rounded-md flex flex-row gap-2"
         style="left: 50%; transform: translate(-50%, -50%)"
       >
-        <div class="flex flex-row gap-2">
+        <div className="flex flex-row gap-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 96 960 960"
-            class="text-green-500 dark:text-[#51ff00]"
+            className="text-green-500 dark:text-[#51ff00]"
             height="24"
             width="24"
           >
@@ -20,11 +20,11 @@ export default function DeviceState({ connected, serial }) {
           </svg>
           Device connected
         </div>
-        <span class="text-gray-400">|</span>
-        <div class="flex flex-row gap-2">
+        <span className="text-gray-400">|</span>
+        <div className="flex flex-row gap-2">
           <span>
             Serial:
-            <span id="serialContainer" class="ml-2 font-mono">
+            <span id="serialContainer" className="ml-2 font-mono">
               {serial || 'unknown '}
             </span>
           </span>
